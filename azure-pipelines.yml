@@ -1,4 +1,14 @@
 # Docker
+- task: FortifyScanCentralSAST@7
+  inputs:
+    scanCentralCtrlUrl: 'https://np.sast.aat.deloitte.com/scancentral-ctrl'
+    scanCentralClientToken: 'N33dful%'
+    sscUrl: 'https://np.ssc.aat.deloitte.com/ssc'
+    sscCiToken: 'c80910ca-cf08-4b87-80b6-39d518698b8d'
+    uploadToSSC: true
+    applicationIdentifierType: 'byId'
+    applicationVersionId: '13342'
+    buildTool: 'mvn'
 # Build a Docker image
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
